@@ -1,5 +1,5 @@
 build.erlang.base:
-	  docker build -t matteosister/docker-build-deps erlang-build-deps
+	  docker build -t matteosister/erlang-build-deps erlang-build-deps
 
 build.erlang:
 		docker build -t matteosister/erlang:17.5.6.3 erlang/17.5.6.3
@@ -16,7 +16,7 @@ build.elixir:
 build: build.erlang.base build.erlang build.elixir
 
 push.erlang.base:
-		docker push matteosister/docker-build-deps
+		docker push matteosister/erlang-build-deps
 
 push.erlang:
 		docker push matteosister/erlang
