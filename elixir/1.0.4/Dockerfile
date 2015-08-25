@@ -2,7 +2,7 @@ FROM matteosister/erlang:18
 
 MAINTAINER Matteo Giachino <matteog@gmail.com>
 
-ENV ELIXIR_VERSION=1.0.5
+ENV ELIXIR_VERSION=1.0.4
 ENV ELIXIR_TAR=https://github.com/elixir-lang/elixir/archive/v${ELIXIR_VERSION}.tar.gz
 
 # Build elixir
