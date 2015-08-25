@@ -1,12 +1,9 @@
-FROM debian:wheezy
+FROM matteosister/erlang-build-deps
 
 MAINTAINER Matteo Giachino <matteog@gmail.com>
 
 ENV OTP_VERSION=18.0
 ENV ERLANG_OTP_TAR=https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz
-
-# Dependencies
-RUN apt-get update && apt-get install -qqy wget autoconf build-essential libncurses5-dev && rm -rf /var/lib/apt/lists/*
 
 # Build erlang
 RUN mkdir /tmp/otp\
