@@ -30,13 +30,19 @@ build.elixir:
 		docker build -t matteosister/elixir:1.1.0-rc.0 elixir/1.1.0-rc.0
 		docker build -t matteosister/elixir:1.1.0 elixir/1.1.0
 		docker build -t matteosister/elixir:1.0 elixir/1.1.0
+		docker build -t matteosister/elixir:1.1 elixir/1.1.0
 		docker build -t matteosister/elixir:1 elixir/1.1.0
 		docker build -t matteosister/elixir:latest elixir/1.1.0
 
 build.mix:
 			docker build -t matteosister/mix:latest mix/latest
 
-build: build.erlang.base build.erlang build.elixir build.mix
+build.phoenix:
+			docker build -t matteosister/phoenix:1 phoenix/1.0
+			docker build -t matteosister/phoenix:1.0 phoenix/1.0
+			docker build -t matteosister/phoenix:latest phoenix/1.0
+
+build: build.erlang.base build.erlang build.elixir build.mix build.phoenix
 
 push.erlang.base:
 		docker push matteosister/erlang-build-deps
@@ -50,4 +56,7 @@ push.elixir:
 push.mix:
 		docker push matteosister/mix
 
-push: push.erlang.base push.erlang push.elixir push.mix
+push.phoenix:
+		docker push matteosister/phoenix
+
+push: push.erlang.base push.erlang push.elixir push.mix push.phoenix
