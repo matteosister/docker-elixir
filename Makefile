@@ -29,10 +29,11 @@ build.elixir:
 		docker build -t matteosister/elixir:1.1.0-beta elixir/1.1.0-beta
 		docker build -t matteosister/elixir:1.1.0-rc.0 elixir/1.1.0-rc.0
 		docker build -t matteosister/elixir:1.1.0 elixir/1.1.0
-		docker build -t matteosister/elixir:1.0 elixir/1.1.0
-		docker build -t matteosister/elixir:1.1 elixir/1.1.0
-		docker build -t matteosister/elixir:1 elixir/1.1.0
-		docker build -t matteosister/elixir:latest elixir/1.1.0
+		docker build -t matteosister/elixir:1.1.1 elixir/1.1.1
+		docker build -t matteosister/elixir:1.0 elixir/1.0.5
+		docker build -t matteosister/elixir:1.1 elixir/1.1.1
+		docker build -t matteosister/elixir:1 elixir/1.1.1
+		docker build -t matteosister/elixir:latest elixir/1.1.1
 
 build.mix:
 			docker build -t matteosister/mix:latest mix/latest
