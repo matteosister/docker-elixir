@@ -16,8 +16,9 @@ build.erlang:
 		docker build -t matteosister/erlang:18.0.2 erlang/18.0.2
 		docker build -t matteosister/erlang:18.0.3 erlang/18.0.3
 		docker build -t matteosister/erlang:18.1 erlang/18.1
-		docker build -t matteosister/erlang:18 erlang/18.1
-		docker build -t matteosister/erlang:latest erlang/18.1
+		docker build -t matteosister/erlang:18.2 erlang/18.2
+		docker build -t matteosister/erlang:18 erlang/18.2
+		docker build -t matteosister/erlang:latest erlang/18.2
 
 build.elixir:
 	  docker build -t matteosister/elixir:1.0.0 elixir/1.0.0
@@ -26,8 +27,8 @@ build.elixir:
 		docker build -t matteosister/elixir:1.0.3 elixir/1.0.3
 		docker build -t matteosister/elixir:1.0.4 elixir/1.0.4
 		docker build -t matteosister/elixir:1.0.5 elixir/1.0.5
-		docker build -t matteosister/elixir:1.1.0-beta elixir/1.1.0-beta
-		docker build -t matteosister/elixir:1.1.0-rc.0 elixir/1.1.0-rc.0
+		#docker build -t matteosister/elixir:1.1.0-beta elixir/1.1.0-beta
+		#docker build -t matteosister/elixir:1.1.0-rc.0 elixir/1.1.0-rc.0
 		docker build -t matteosister/elixir:1.1.0 elixir/1.1.0
 		docker build -t matteosister/elixir:1.1.1 elixir/1.1.1
 		docker build -t matteosister/elixir:1.0 elixir/1.0.5

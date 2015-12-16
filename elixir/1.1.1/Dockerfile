@@ -1,4 +1,4 @@
-FROM matteosister/erlang:18
+FROM matteosister/erlang:18.1
 
 MAINTAINER Matteo Giachino <matteog@gmail.com>
 
