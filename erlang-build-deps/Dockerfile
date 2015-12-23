@@ -1,6 +1,6 @@
 FROM debian:wheezy
 
-MAINTAINER Matteo Giachino <matteog@gmail.com
+MAINTAINER Matteo Giachino <matteog@gmail.com>
 
 # Dependencies
 RUN apt-get update && apt-get install -qqy\
