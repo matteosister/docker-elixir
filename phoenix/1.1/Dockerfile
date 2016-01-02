@@ -1,4 +1,4 @@
-FROM matteosister/elixir:1.0
+FROM matteosister/elixir:1.1
 MAINTAINER Matteo Giachino <matteog@gmail.com>
 
 # base
