@@ -3,7 +3,7 @@ FROM debian:wheezy
 MAINTAINER Matteo Giachino <matteog@gmail.com>
 
 # Dependencies
-RUN apt-get update && apt-get install -qqy\
+RUN apt-get update && apt-get install --force-yes -qqy\
   wget build-essential autoconf libncurses5-dev openssl libssl-dev fop\
   xsltproc unixodbc-dev locales\
   && rm -rf /var/lib/apt/lists/*
